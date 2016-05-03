@@ -50,6 +50,10 @@
 		7CF905161CD312C200D763D3 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF9050B1CD312C200D763D3 /* SearchVC.swift */; };
 		7CF905181CD3132500D763D3 /* PushBookVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF905171CD3132500D763D3 /* PushBookVC.swift */; };
 		7CF9051B1CD3137C00D763D3 /* NavigationBarFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF9051A1CD3137C00D763D3 /* NavigationBarFactory.swift */; };
+		7CF905211CD337BC00D763D3 /* BookTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF905201CD337BC00D763D3 /* BookTitleView.swift */; };
+		7CF905231CD342A200D763D3 /* 隶变体.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7CF904DB1CD30F8400D763D3 /* 隶变体.ttf */; };
+		7CF905251CD3451500D763D3 /* PhotoPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF905241CD3451500D763D3 /* PhotoPickerVC.swift */; };
+		7CF905271CD346BB00D763D3 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF905261CD346BB00D763D3 /* AlertView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -111,6 +115,9 @@
 		7CF9050B1CD312C200D763D3 /* SearchVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		7CF905171CD3132500D763D3 /* PushBookVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushBookVC.swift; sourceTree = "<group>"; };
 		7CF9051A1CD3137C00D763D3 /* NavigationBarFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBarFactory.swift; sourceTree = "<group>"; };
+		7CF905201CD337BC00D763D3 /* BookTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookTitleView.swift; sourceTree = "<group>"; };
+		7CF905241CD3451500D763D3 /* PhotoPickerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoPickerVC.swift; sourceTree = "<group>"; };
+		7CF905261CD346BB00D763D3 /* AlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -556,6 +563,7 @@
 			isa = PBXGroup;
 			children = (
 				7CF905171CD3132500D763D3 /* PushBookVC.swift */,
+				7CF905241CD3451500D763D3 /* PhotoPickerVC.swift */,
 			);
 			path = C;
 			sourceTree = "<group>";
@@ -577,6 +585,7 @@
 		7CF905001CD312C200D763D3 /* V */ = {
 			isa = PBXGroup;
 			children = (
+				7CF905201CD337BC00D763D3 /* BookTitleView.swift */,
 			);
 			path = V;
 			sourceTree = "<group>";
@@ -681,6 +690,7 @@
 			isa = PBXGroup;
 			children = (
 				7CF9051A1CD3137C00D763D3 /* NavigationBarFactory.swift */,
+				7CF905261CD346BB00D763D3 /* AlertView.swift */,
 			);
 			path = GeneralFactory;
 			sourceTree = "<group>";
@@ -743,6 +753,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CF905231CD342A200D763D3 /* 隶变体.ttf in Resources */,
 				7CF904CB1CD30CDF00D763D3 /* social-icon@2x.png in Resources */,
 				7CF904D41CD30CDF00D763D3 /* btn_star_evaluation_normal.png in Resources */,
 				7CF905101CD312C200D763D3 /* Login.storyboard in Resources */,
@@ -779,6 +790,7 @@
 				7CF904D81CD30CDF00D763D3 /* ProgressHUD.m in Sources */,
 				7CF904CF1CD30CDF00D763D3 /* IGLDropDownItem.m in Sources */,
 				7CF904BD1CD30CDF00D763D3 /* AKSegmentedControl.m in Sources */,
+				7CF905271CD346BB00D763D3 /* AlertView.swift in Sources */,
 				7CF905131CD312C200D763D3 /* MoreVC.swift in Sources */,
 				7CF904D31CD30CDF00D763D3 /* NSString+TextDirectionality.m in Sources */,
 				7CF905141CD312C200D763D3 /* PushVC.swift in Sources */,
@@ -793,9 +805,11 @@
 				7CD063FC1CD1BE3800320E42 /* AppDelegate.swift in Sources */,
 				7CF905161CD312C200D763D3 /* SearchVC.swift in Sources */,
 				7CF905151CD312C200D763D3 /* RankVC.swift in Sources */,
+				7CF905211CD337BC00D763D3 /* BookTitleView.swift in Sources */,
 				7CF905181CD3132500D763D3 /* PushBookVC.swift in Sources */,
 				7CF904CE1CD30CDF00D763D3 /* CSHProgressHUD.m in Sources */,
 				7CF904D91CD30CDF00D763D3 /* VPImageCropperViewController.m in Sources */,
+				7CF905251CD3451500D763D3 /* PhotoPickerVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

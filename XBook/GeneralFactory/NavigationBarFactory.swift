@@ -9,7 +9,6 @@
 import UIKit
 
 class NavigationBarFactory: NSObject {
-
     
     //设置"关闭"&&"发布"
     static func efSetNavigationBar(targer:UIViewController,titleLeft:String="关闭",titleRight:String="确定") {
@@ -28,5 +27,5 @@ class NavigationBarFactory: NSObject {
         etbtnRight.tag = 5678
         etbtnRight.addTarget(targer, action: Selector("efOnClickRight"), forControlEvents: .TouchUpInside)
         targer.view.addSubview(etbtnRight)
-    }    
+    }
 }
