@@ -14,6 +14,10 @@ class PushVC: UIViewController {
         super.viewDidLoad()
         
         self.efSetNavigationBar()
+        
+        
+        let pushBookVC = PushBookVC()
+        self.presentViewController(pushBookVC, animated:true, completion: nil)
     }
     
     override func didReceiveMemoryWarning() {
@@ -31,7 +35,7 @@ class PushVC: UIViewController {
         etbtnPushBook.titleLabel?.font = UIFont(name: fontName, size: 14)
         etbtnPushBook.setTitleColor(UIColor.blackColor(), forState: .Normal)
         etbtnPushBook.contentHorizontalAlignment = .Left
-        etbtnPushBook.addTarget(self, action: Selector("efOnClcikPushNewBook"), forControlEvents: .TouchUpInside)
+        etbtnPushBook.addTarget(self, action: #selector(efOnClcikPushNewBook), forControlEvents: .TouchUpInside)
         navigationView.addSubview(etbtnPushBook)
     }
     

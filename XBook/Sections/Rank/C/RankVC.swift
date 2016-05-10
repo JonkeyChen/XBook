@@ -30,7 +30,7 @@ class RankVC: UIViewController {
         let etbtnLogin = UIButton(frame: CGRectMake(20,100,ScreenWidth-40,30))
         etbtnLogin.setTitle("登录", forState: .Normal)
         etbtnLogin.setTitleColor(UIColor.redColor(), forState: .Normal)
-        etbtnLogin.addTarget(self, action: Selector("efCheckOutUserIsLogin"), forControlEvents: .TouchUpInside)
+        etbtnLogin.addTarget(self, action: #selector(efCheckOutUserIsLogin), forControlEvents: .TouchUpInside)
         self.view.addSubview(etbtnLogin)
     }
     

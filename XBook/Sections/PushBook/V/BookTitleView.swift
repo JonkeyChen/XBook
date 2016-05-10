@@ -14,7 +14,17 @@ import UIKit
 
 class BookTitleView: UIView {
 
-    var evbtnBookCover:UIButton?
+    private var evbtnBookCover:UIButton?
+    
+    var bookCoverImage:UIImage? {
+        didSet{
+            self.evbtnBookCover?.setImage(self.bookCoverImage, forState: .Normal)
+        }
+        
+        willSet{
+        
+        }
+    }
     
     var evtxfBookName:JVFloatLabeledTextField?
     
@@ -22,14 +32,13 @@ class BookTitleView: UIView {
     
     var delegate:BookTitleViewDelegate?
     
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
         self.evbtnBookCover = UIButton(frame: CGRectMake(10,8,110,141))
         self.evbtnBookCover?.setImage(UIImage(named: "Cover"), forState: .Normal)
         self.addSubview(self.evbtnBookCover!)
-        self.evbtnBookCover?.addTarget(self, action: Selector("efOnClickChoiceCover"), forControlEvents: .TouchUpInside)
+        self.evbtnBookCover?.addTarget(self, action: #selector(efOnClickChoiceCover), forControlEvents: .TouchUpInside)
         
         self.evtxfBookName = JVFloatLabeledTextField(frame: CGRectMake(128,7+40,ScreenWidth-128-15,30))
         self.evtxfBookName?.placeholder = "书名"
@@ -48,8 +57,9 @@ class BookTitleView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func efOnClickChoiceCover(){
-        print("选择封面")
+    @objc private func efOnClickChoiceCover(){
         self.delegate?.bookTitleView!(self, ChoiceBookCover: self.evbtnBookCover!)
     }
+ 
+    
 }

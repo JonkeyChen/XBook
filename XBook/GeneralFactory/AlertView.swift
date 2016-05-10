@@ -8,14 +8,20 @@
 
 import UIKit
 
-typealias AlertBlock = (index:Int)->Void
+//typealias AlertBlock = (index:Int)->Void
+
+protocol AlertViewDelegate {
+    func AlertViewDidSelecteAtIndex(index:Int)
+}
 
 class AlertView: UIViewController {
     
     var titleArray:Array<String> = []
     
-    var selectedAtIndex:AlertBlock?
-        
+    //var selectedAtIndex:AlertBlock?
+    
+    var  delegate:AlertViewDelegate?
+    
     init(){
         super.init(nibName:nil,bundle:nil)
         //背景透明设置
@@ -57,8 +63,8 @@ class AlertView: UIViewController {
     }
     
     @objc private func efOnClickAlertAtIndex(sender:UIButton){
-        self.selectedAtIndex!(index: sender.tag)
+        self.delegate?.AlertViewDidSelecteAtIndex(sender.tag)
+        //self.selectedAtIndex!(index: sender.tag)
         self.dismissViewControllerAnimated(true, completion: nil)
     }
-    
 }

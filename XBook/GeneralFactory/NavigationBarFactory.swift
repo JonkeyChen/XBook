@@ -12,6 +12,8 @@ class NavigationBarFactory: NSObject {
     
     //设置"关闭"&&"发布"
     static func efSetNavigationBar(targer:UIViewController,titleLeft:String="关闭",titleRight:String="确定") {
+        targer.view.backgroundColor = UIColor.whiteColor()
+        
         let  etbtnLeft = UIButton(frame: CGRectMake(10,20,40,20))
         etbtnLeft.setTitle(titleLeft, forState: .Normal)
         etbtnLeft.titleLabel?.font = UIFont(name: fontName, size: 14)

@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7CBCF7351CE0978100D38006 /* Test.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CBCF7341CE0978100D38006 /* Test.png */; };
 		7CD063FC1CD1BE3800320E42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD063FB1CD1BE3800320E42 /* AppDelegate.swift */; };
 		7CD064031CD1BE3800320E42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CD064021CD1BE3800320E42 /* Assets.xcassets */; };
 		7CD0643F1CD1E1E500320E42 /* Configure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD0643E1CD1E1E500320E42 /* Configure.swift */; };
+		7CF1DDC91CD9A2A60019E6AA /* PushBookTitleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF1DDC81CD9A2A60019E6AA /* PushBookTitleVC.swift */; };
+		7CF1DDCB1CD9C8070019E6AA /* PushBookDescriptionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF1DDCA1CD9C8070019E6AA /* PushBookDescriptionVC.swift */; };
+		7CF1DDCD1CD9D4950019E6AA /* PushBookKindsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF1DDCC1CD9D4950019E6AA /* PushBookKindsVC.swift */; };
 		7CF904BD1CD30CDF00D763D3 /* AKSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF9048D1CD30CDF00D763D3 /* AKSegmentedControl.m */; };
 		7CF904BE1CD30CDF00D763D3 /* segmented-bg-pressed-center.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CF9048F1CD30CDF00D763D3 /* segmented-bg-pressed-center.png */; };
 		7CF904BF1CD30CDF00D763D3 /* segmented-bg-pressed-center@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CF904901CD30CDF00D763D3 /* segmented-bg-pressed-center@2x.png */; };
@@ -57,12 +61,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7CBCF7341CE0978100D38006 /* Test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Test.png; sourceTree = "<group>"; };
 		7CD063F81CD1BE3800320E42 /* XBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CD063FB1CD1BE3800320E42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CD064021CD1BE3800320E42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7CD064071CD1BE3800320E42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7CD0643E1CD1E1E500320E42 /* Configure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configure.swift; sourceTree = "<group>"; };
 		7CD064401CD1E1F000320E42 /* Bridging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridging.h; sourceTree = "<group>"; };
+		7CF1DDC81CD9A2A60019E6AA /* PushBookTitleVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushBookTitleVC.swift; sourceTree = "<group>"; };
+		7CF1DDCA1CD9C8070019E6AA /* PushBookDescriptionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushBookDescriptionVC.swift; sourceTree = "<group>"; };
+		7CF1DDCC1CD9D4950019E6AA /* PushBookKindsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushBookKindsVC.swift; sourceTree = "<group>"; };
 		7CF9048C1CD30CDF00D763D3 /* AKSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKSegmentedControl.h; sourceTree = "<group>"; };
 		7CF9048D1CD30CDF00D763D3 /* AKSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKSegmentedControl.m; sourceTree = "<group>"; };
 		7CF9048F1CD30CDF00D763D3 /* segmented-bg-pressed-center.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "segmented-bg-pressed-center.png"; sourceTree = "<group>"; };
@@ -563,6 +571,9 @@
 			isa = PBXGroup;
 			children = (
 				7CF905171CD3132500D763D3 /* PushBookVC.swift */,
+				7CF1DDC81CD9A2A60019E6AA /* PushBookTitleVC.swift */,
+				7CF1DDCA1CD9C8070019E6AA /* PushBookDescriptionVC.swift */,
+				7CF1DDCC1CD9D4950019E6AA /* PushBookKindsVC.swift */,
 				7CF905241CD3451500D763D3 /* PhotoPickerVC.swift */,
 			);
 			path = C;
@@ -660,6 +671,7 @@
 		7CF9050A1CD312C200D763D3 /* C */ = {
 			isa = PBXGroup;
 			children = (
+				7CBCF7341CE0978100D38006 /* Test.png */,
 				7CF9050B1CD312C200D763D3 /* SearchVC.swift */,
 			);
 			path = C;
@@ -769,6 +781,7 @@
 				7CF904C21CD30CDF00D763D3 /* segmented-bg-pressed-right.png in Resources */,
 				7CF904C31CD30CDF00D763D3 /* segmented-bg-pressed-right@2x.png in Resources */,
 				7CF904BE1CD30CDF00D763D3 /* segmented-bg-pressed-center.png in Resources */,
+				7CBCF7351CE0978100D38006 /* Test.png in Resources */,
 				7CF904C41CD30CDF00D763D3 /* segmented-bg.png in Resources */,
 				7CF904CA1CD30CDF00D763D3 /* social-icon.png in Resources */,
 				7CF904C61CD30CDF00D763D3 /* segmented-separator.png in Resources */,
@@ -790,6 +803,7 @@
 				7CF904D81CD30CDF00D763D3 /* ProgressHUD.m in Sources */,
 				7CF904CF1CD30CDF00D763D3 /* IGLDropDownItem.m in Sources */,
 				7CF904BD1CD30CDF00D763D3 /* AKSegmentedControl.m in Sources */,
+				7CF1DDCD1CD9D4950019E6AA /* PushBookKindsVC.swift in Sources */,
 				7CF905271CD346BB00D763D3 /* AlertView.swift in Sources */,
 				7CF905131CD312C200D763D3 /* MoreVC.swift in Sources */,
 				7CF904D31CD30CDF00D763D3 /* NSString+TextDirectionality.m in Sources */,
@@ -804,9 +818,11 @@
 				7CF904DA1CD30CDF00D763D3 /* XKeyBoard.m in Sources */,
 				7CD063FC1CD1BE3800320E42 /* AppDelegate.swift in Sources */,
 				7CF905161CD312C200D763D3 /* SearchVC.swift in Sources */,
+				7CF1DDCB1CD9C8070019E6AA /* PushBookDescriptionVC.swift in Sources */,
 				7CF905151CD312C200D763D3 /* RankVC.swift in Sources */,
 				7CF905211CD337BC00D763D3 /* BookTitleView.swift in Sources */,
 				7CF905181CD3132500D763D3 /* PushBookVC.swift in Sources */,
+				7CF1DDC91CD9A2A60019E6AA /* PushBookTitleVC.swift in Sources */,
 				7CF904CE1CD30CDF00D763D3 /* CSHProgressHUD.m in Sources */,
 				7CF904D91CD30CDF00D763D3 /* VPImageCropperViewController.m in Sources */,
 				7CF905251CD3451500D763D3 /* PhotoPickerVC.swift in Sources */,

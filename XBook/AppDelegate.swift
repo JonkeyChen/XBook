@@ -31,7 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //initTabBarController
         let  tabBarController = UITabBarController()
-        tabBarController.viewControllers = [ pushVC, rankVC, searchVC,  circleVC, moreVC]
+        tabBarController.viewControllers = [rankVC, searchVC,pushVC,circleVC, moreVC]
         rankVC.tabBarController?.tabBar.tintColor = MainColor
         
         //initWindow Object
